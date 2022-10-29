@@ -1,2 +1,2 @@
-# TF-GCP-Cloud-SQL
-Some examples for TF and GCP Cloud SQL
+# My Terraform for GCP-Cloud-SQL
+Using this code to set up GCP Cloud SQL for projects.
