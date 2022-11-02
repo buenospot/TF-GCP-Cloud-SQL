@@ -13,6 +13,10 @@ variable "gcp_az" {
   type        = string
 }
 
+variable "gcp_creds" {
+  default = ""
+}
+
 output "gcp_cloudsql_dbname" {
     value = ""
 }
