@@ -14,6 +14,5 @@ variable "gcp_az" {
 }
 
 output "gcp_cloudsql_dbname" {
-  description = "This is the name of the database that gets created."
-  type        = string
+    value = ""
 }
