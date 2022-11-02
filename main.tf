@@ -17,13 +17,13 @@ provider "google" {
 
 resource "google_sql_database" "database" {
   name     = "mark-test-db"
-  instance = google_sql_database_instance.instance.name
+  instance = google_sql_database_instance.postgres_instance.name
 }
 
 # found this code on the GCP site and looks pretty good
 resource "google_sql_database_instance" "postgres_instance" {
   name             = "mark-test-db-instance"
-  region           = var.region
+  region           = var.gcp_region
   database_version = "POSTGRES_14"
   root_password    = "Passw0rd1!"
   settings {
