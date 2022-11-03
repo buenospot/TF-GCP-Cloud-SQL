@@ -16,7 +16,7 @@ provider "google" {
 }
 
 resource "google_sql_database" "database" {
-  name     = "mark-test-db"
+  name     = var.gcp_db_name
   instance = google_sql_database_instance.postgres_instance.name
 }
 
