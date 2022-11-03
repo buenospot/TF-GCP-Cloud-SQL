@@ -1,4 +1,4 @@
-# My Terraform for GCP-Cloud-SQL
+# My Terraform for creating a Postgres instance on Google Cloud SQL
 
 I needed a GCP SQL database using postgres so I created this quick Terraform config to do that.
 
