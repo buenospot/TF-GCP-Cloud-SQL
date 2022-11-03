@@ -47,9 +47,6 @@ output "db_region" {
   value = google_sql_database_instance.postgres_instance.region
 }
 
-output "db_zone" {
-  value = google_sql_database_instance.postgres_instance.zone
-}
 
 
 output "db_instance_name" {
