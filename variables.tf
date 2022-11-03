@@ -16,7 +16,3 @@ variable "gcp_az" {
 variable "gcp_creds" {
   default = ""
 }
-
-output "gcp_cloudsql_dbname" {
-    value = ""
-}
