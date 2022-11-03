@@ -44,11 +44,11 @@ output "db_name" {
 }
 
 output "db_region" {
-  value = google_sql_database.postgres_instance.region
+  value = google_sql_database_instance.postgres_instance.region
 }
 
 output "db_zone" {
-  value = google_sql_database.postgres_instance.zone
+  value = google_sql_database_instance.postgres_instance.zone
 }
 
 
