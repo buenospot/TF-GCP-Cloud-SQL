@@ -5,6 +5,18 @@ I needed a GCP SQL database using postgres so I created this quick Terraform con
 
 ## Database Creation
 
-There is a variable named `gcp_db_name` that you need to provide a name for. This will be used for the GCP DB name.
+Here are the variables that need to be filled at runtime:
+
+* `gcp_project`
+    * The name of the GCP project
+* `gcp_region`
+    * The name of the GCP region
+* `gcp_az`
+    * The name of the GCP AZ
+* `gcp_creds`
+    * The creds you need to access the GCP project
+* `gcp_db_name`
+    * The name of the database
+
 
 The database instance name however will be computed by Terraform and provided as an output. IPv4 is enabled and deletion protection is set to false so that Terraform can destroy the resources when necessary.
