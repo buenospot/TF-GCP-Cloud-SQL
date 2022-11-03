@@ -39,7 +39,20 @@ resource "google_sql_database_instance" "postgres_instance" {
   deletion_protection = false # set to true to prevent destruction of the resource
 }
 
-output "name" {
+output "db_name" {
+  value = google_sql_database.database.name
+}
+
+output "db_region" {
+  value = google_sql_database.database.region
+}
+
+output "db_zone" {
+  value = google_sql_database.database.region.zone
+}
+
+
+output "db_instance_name" {
   value = google_sql_database_instance.postgres_instance.name
 }
 
