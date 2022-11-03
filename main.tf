@@ -22,7 +22,8 @@ resource "google_sql_database" "database" {
 
 # found this code on the GCP site and looks pretty good
 resource "google_sql_database_instance" "postgres_instance" {
-  name             = "mark-test-db-instance"
+  # name             = "mark-test-db-instance"
+  name = ""
   region           = var.gcp_region
   database_version = "POSTGRES_14"
   root_password    = "Passw0rd1!"
@@ -39,6 +40,9 @@ resource "google_sql_database_instance" "postgres_instance" {
   deletion_protection = false # set to true to prevent destruction of the resource
 }
 
+output "name" {
+  value = google_sql_database_instance.postgres_instance.name
+}
 
 # resource "google_compute_network" "vpc_network" {
 #   name = "terraform-network"
