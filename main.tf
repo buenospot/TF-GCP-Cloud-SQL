@@ -22,7 +22,6 @@ resource "google_sql_database" "database" {
 
 # found this code on the GCP site and looks pretty good
 resource "google_sql_database_instance" "postgres_instance" {
-  # name             = "mark-test-db-instance"
   name = ""
   region           = var.gcp_region
   database_version = "POSTGRES_14"
