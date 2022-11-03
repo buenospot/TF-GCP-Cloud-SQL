@@ -44,11 +44,11 @@ output "db_name" {
 }
 
 output "db_region" {
-  value = google_sql_database.database.region
+  value = google_sql_database.database.gcp_region
 }
 
 output "db_zone" {
-  value = google_sql_database.database.region.zone
+  value = google_sql_database.database.gcp_region.zone
 }
 
 
