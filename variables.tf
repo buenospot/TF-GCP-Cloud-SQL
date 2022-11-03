@@ -16,3 +16,7 @@ variable "gcp_az" {
 variable "gcp_creds" {
   default = ""
 }
+
+variable "gcp_db_name" {
+  default = ""
+}
