@@ -20,3 +20,5 @@ Here are the variables that need to be filled at runtime:
 
 
 The database instance name however will be computed by Terraform and provided as an output. IPv4 is enabled and deletion protection is set to false so that Terraform can destroy the resources when necessary.
+
+This was an attempt that did not include the module. The idea will be to end up using the module for this to clean up the code.
