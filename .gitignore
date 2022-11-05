@@ -34,3 +34,6 @@ credentials.tfrc.json
 
 # ignore locking
 .terraform.lock.hcl
+
+# ignore my auto vars
+variables.auto.tfvars
