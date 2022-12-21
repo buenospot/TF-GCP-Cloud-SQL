@@ -8,8 +8,8 @@ variable "gcp_region" {
   type        = string
 }
 
-variable "gcp_az" {
-  description = "The GCP AZ region that this resouce will be provisioned in."
+variable "gcp_zone" {
+  description = "The GCP zone that this resouce will be provisioned in."
   type        = string
 }
 
