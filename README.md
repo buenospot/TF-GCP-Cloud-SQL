@@ -11,8 +11,8 @@ Here are the variables that need to be filled at runtime:
     * The name of the GCP project
 * `gcp_region`
     * The name of the GCP region
-* `gcp_az`
-    * The name of the GCP AZ
+* `gcp_zone`
+    * The name of the GCP zone
 * `gcp_creds`
     * The creds you need to access the GCP project
 * `gcp_db_name`
