@@ -29,7 +29,7 @@ override.tf.json
 # example: *tfplan*
 
 # Ignoring credential files
-hc-fd16295afe104a7d887d3581496-4ad48ad79f5c.json
+# OLD - hc-fd16295afe104a7d887d3581496-4ad48ad79f5c.json
 hc-08b1d7d140c34dc58d324911da5-e8d7e3ab89f6.json
 credentials.tfrc.json
 
