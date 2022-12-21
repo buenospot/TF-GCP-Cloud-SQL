@@ -20,3 +20,7 @@ variable "gcp_creds" {
 variable "gcp_db_name" {
   default = ""
 }
+
+variable "gcp_db_type" {
+  default = ""
+}
