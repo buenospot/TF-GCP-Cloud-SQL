@@ -18,7 +18,7 @@ provider "google" {
 
 # found this code on the GCP site and looks pretty good
 resource "google_sql_database_instance" "postgres_instance" {
-  name = "mb-instance-gcpsql"
+  name             = "mb-instance-gcpsql"
   region           = var.gcp_region
   database_version = "POSTGRES_14"
   root_password    = "Passw0rd1!"
