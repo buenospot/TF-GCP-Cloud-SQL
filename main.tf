@@ -15,10 +15,6 @@ provider "google" {
   zone    = var.gcp_az
 }
 
-resource "google_sql_database" "database" {
-  name     = var.gcp_db_name
-  instance = google_sql_database_instance.postgres_instance.name
-}
 
 # found this code on the GCP site and looks pretty good
 resource "google_sql_database_instance" "postgres_instance" {
@@ -38,6 +34,12 @@ resource "google_sql_database_instance" "postgres_instance" {
   }
   deletion_protection = false # set to true to prevent destruction of the resource
 }
+
+resource "google_sql_database" "database" {
+  name     = var.gcp_db_name
+  instance = google_sql_database_instance.postgres_instance.name
+}
+
 
 output "db_name" {
   value = google_sql_database.database.name
