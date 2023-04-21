@@ -42,3 +42,4 @@ variables.auto.tfvars
 
 # ignore workspace
 .code-workspace
+TF-GCP-Cloud-SQL.code-workspace
