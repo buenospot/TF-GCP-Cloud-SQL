@@ -16,7 +16,7 @@ provider "google" {
 }
 
 
-# found this code on the GCP site and looks pretty good
+# setting up a GCP SQL instance
 resource "google_sql_database_instance" "postgres_instance" {
   name             = "mb-instance-gcpsql"
   region           = var.gcp_region
